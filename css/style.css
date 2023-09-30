@@ -1,0 +1,84 @@
+/* FONTS */
+@font-face {
+    font-family: roboto;
+    src: url(../assets/fonts/RobotoCondensed-Regular.ttf);
+}
+@font-face {
+    font-family: dosis;
+    src: url(../assets/fonts/Dosis-VariableFont_wght.ttf);
+}
+*{
+    box-sizing: border-box;
+    font-family: dosis;
+    font-variant: small-caps;
+}
+/* COMMON STYLES */
+html{
+    scroll-behavior: smooth;
+}
+body{
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+.div{
+    width: 100%;
+    height: 900px;
+}
+/* MENU STYLES */
+.nav-link,.toggler{
+    color: rgb(230, 160, 40);
+}
+.footer__name{
+    color: rgb(230, 160, 40);
+    text-decoration: none;
+}
+.btn{
+    color: black;
+}
+.btn--contact{
+    background-color: rgb(230, 160, 40);
+}
+.btn:hover{
+    color: white;
+    background-color: black;
+}
+/* CARD STYLES */
+.container__card{
+    height: 450px;
+}
+.card{
+    height: 100%;
+}
+.card-img{
+    width: 100%;
+    height: 100%;
+}
+.conatiner__image:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+/* PREMIOS STYLES */
+.card-text,.card-title{
+    width: 40%;
+    text-shadow: 1px 2px 2px black;
+}
+/* FORM */
+.form__title,.btn{
+    background-color:rgb(230, 160, 40) !important;
+}
+.btn:hover{
+    background-color: black !important;
+    color: rgb(230, 160, 40) ;
+}
+.form__input:hover{
+    color: black;
+}
+.form__input:focus{
+    border: 0 !important;
+    outline: 0 !important;
+    border: black !important;
+}

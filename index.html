@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- OTHERS CSS -->
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- FONT-AWESOME REMOTE LIBRARY -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container p-0">
+        <header class="header w-100">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary border w-100 d-flex justify-content-between">
+                <div class="container__bar">
+                  <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="toggler">Menu</span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+                      <li class="nav-item">
+                        <a class="nav-link fs-5" aria-current="page" href="./index.html">Home</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link fs-5 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Portfolio
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="./pages/bodas.html">Bodas</a></li>
+                          <li><a class="dropdown-item" href="./pages/bebes.html">Bebes</a></li>
+                          <li><a class="dropdown-item" href="./pages/mascotas.html">Mascotas</a></li>
+                          <li><a class="dropdown-item" href="./pages/embarazada.html">Embarazadas</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link fs-5" href="./pages/premios.html">Premios</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link fs-5" href="./pages/estilos.html">Estilos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link fs-5" href="./pages/contacto.html">Contactanos</a>
+                      </li>
+                    </ul>
+                </div>
+            </div>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+              <button class="btn btn-outline-success border-0" type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+              </nav>
+        </header>
+        <main class="main p-4">
+            <article class="article row">
+                <h1 class="article__title fs-1">Photography</h1>
+                    <p class="article__text fs-4 col-6 d-none d-lg-block">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, repudiandae porro quam iusto dignissimos optio qui? Suscipit quaerat asperiores doloribus quis recusandae sint? Doloremque reiciendis veritatis iusto cum ab velit.
+                        Labore sunt doloribus in, illo dolorem corrupti consectetur laudantium magni maxime dolorum esse minima vitae nam error perspiciatis culpa praesentium harum fugiat blanditiis exercitationem repellat nesciunt! Quis recusandae non numquam.
+                    </p>
+                <div class="article__image col-lg-6 col-md-12 d-flex justify-content-center">
+                    <img src="./assets/images/index_visor.jpeg" alt="" class="img-fluid">
+                </div>
+            </article>
+            <!-- SLIDER CAROUSEL WIDTH-->
+            <div id="carouselExampleCaptions" class="carousel slide mt-5 d-none d-md-block">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./assets/images/slider_boda.webp" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 class="fs-2">Boda</h5>
+                      <p>Representa en arte el dia mas importante con tu pareja</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/images/slider_perro.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 class="fs-2">Mascotas</h5>
+                      <p>Inmortaliza a tu compañero de viaje para siempre contigo</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/images/slider_pregnant.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="fs-2">Body painting</h5>
+                        <p>Recuerda aquel momento cuando le llevavas dentro de ti</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            <!-- SLIDER CAROUSEL HEIGHT-->
+            <div id="carouselExampleCaptions1" class="carousel slide mt-5 d-block d-md-none">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./assets/images/slider_boda_h.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 class="fs-2">Boda</h5>
+                      <p>Representa en arte el dia mas importante con tu pareja</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/images/slider_perro_h.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 class="fs-2">Mascotas</h5>
+                      <p>Inmortaliza a tu compañero de viaje para siempre contigo</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/images/slider_pregnant_h.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 class="fs-2">Body painting</h5>
+                      <p>Recuerda aquel momento cuando le llevavas dentro de ti</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <!-- CONTACT AND MENU INDEX -->
+              <div class="row mt-5 justify-content-center">
+                <!-- CONTACT SECTION -->
+                <section class=" col-xl-4 d-flex flex-wrap">
+                  <!-- ARTICLE CONTACT TOP -->
+                  <article class=" col-lg-6 col-xl-12 mb-5 ">
+                    <p class="fs-3">
+                      Si quieres contratar nuestros servicios para inmortalizar los momentos mas importantes de tu vida no dudes en contactar con nosotrso para inmortzalizar experincias,personas o mascotas unicas en tu vida
+                   </p>
+                    <div class="col-12 d-flex justify-content-end">
+                        <a class="btn btn--contact col-4 me-2" href="./pages/contacto.html">Contactanos</a>
+                    </div>
+                 </article>
+                  <!-- ARTICLE CONTACT BOTTOM -->
+                 <article class="col-lg-6 col-xl-12 mb-5">
+                   <p class="fs-3">
+                    Si te apasiona la fotografia y quieres vivir de esto no dudes en contavtar con nostros y enseñarnos de que eres capaz para unirte a nuestro grupo y trabajar juntos en esta gran pasion
+                  <div class="col-12 d-flex justify-content-end">
+                    <a class="btn btn--contact col-4 me-2" href="./pages/contacto.html">Contactanos</a>
+                    </div>
+                 </article>
+                </section>
+                <!-- SECTION CONTAINING CARDS MENU -->
+                <section class="col-lg-10 col-xl-8">
+                  <h2 class="dection__title fs-1">My Portofolio</h2>
+                  <!-- ARTICLE TOP -->
+                  <article class="row justify-content-center">
+                        <!-- WEDDING -->
+                        <div class="card border-0 p-0 mb-4 p-md-5 pt-md-0 pe-md-0 col-10 col-md-6">
+                          <a href="./pages/bodas.html" class="container__card">
+                              <img src="./assets/images/menu_boda.jpeg" class="card-img" alt="...">
+                              </a>
+                        </div>
+                        <!-- BABIES -->
+                        <div class="card border-0 p-0 mb-4 p-md-5 pb-md-0 pe-md-0 col-10 col-md-6">
+                              <a href="./pages/bebes.html" class="container__card">
+                                <img src="./assets/images/menu_bebe.jpeg" class="card-img" alt="...">
+                              </a>
+                          </div>
+                    </article>
+                    <!-- ARTICLE BOTTOM -->
+                    <article class="row justify-content-center">
+                        <!-- PREGNANT -->
+                        <div class="card border-0 p-0 mb-4 p-md-5 pt-md-0 ps-md-0 col-10 col-md-6">
+                            <a href="./pages/embarazada.html" class="container__card">
+                                <img src="./assets/images/menu_embarazada.webp" class="card-img" alt="...">
+                              </a>
+                        </div>
+                        <!-- PUPPIES -->
+                        <div class="card border-0 p-0 mb-4 p-md-5 pb-md-0 ps-md-0 col-10 col-md-6">
+                          <a href="./pages/mascotas.html" class="container__card">
+                            <img src="./assets/images/menu_perro.jpeg" class="card-img" alt="...">
+                          </a>
+                        </div>
+                    </article>
+                </section>
+              </div>
+        </main>
+        <footer class="footer row w-100 row align-items-center m-0">
+          <!-- MADE BY -->
+          <p class="fs-5 col-md-6">Pagina creada por <a class="footer__name" href="#">Javier Rocha Gómez</a></p>
+          <!-- SOCIAL MEDIA -->
+          <ul class="nav justify-content-end col-md-6">
+            <li class="nav-item">
+              <a class="nav-link" href="https://es.linkedin.com/" target="_blank">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.instagram.com/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.facebook.com/" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mailto:dae_javierrocha@tiberadeltajo.es" target="_blank">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </li>
+          </ul>
+        </footer>
+    </div>
+    <!-- BOOTSTRAP JS FILE -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- OTHER JS FILES -->
+    <script src="./js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- OTHERS CSS -->
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- FONT-AWESOME REMOTE LIBRARY -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container p-0">
+        <header class="header w-100">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary border w-100 d-flex justify-content-between">
+                <div class="container__bar">
+                  <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="toggler">Menu</span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+                      <li class="nav-item">
+                        <a class="nav-link fs-5" aria-current="page" href="../index.html">Home</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link fs-5 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Portfolio
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="./bodas.html">Bodas</a></li>
+                          <li><a class="dropdown-item" href="./bebes.html">Bebes</a></li>
+                          <li><a class="dropdown-item" href="./mascotas.html">Mascotas</a></li>
+                          <li><a class="dropdown-item" href="./embarazada.html">Embarazadas</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link fs-5" href="./premios.html">Premios</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link fs-5" href="./estilos.html">Estilos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link fs-5" href="./contacto.html">Contactanos</a>
+                      </li>
+                    </ul>
+                </div>
+            </div>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+              <button class="btn btn-outline-success border-0" type="submit">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </nav>
+        </header>
+        <main class="main p-4 ">
+            <section class="row">
+                <!-- SIGN IN FORM -->
+                <form class="row g-3 col-lg-4 flex-column">
+                    <h2 class="form__title w-100 text-center p-3 rounded">Sign In</h2>
+                    <!-- EMAIL -->
+                    <fieldset class="p-4">
+                        <div class="col-md-6 w-100 mb-2">
+                            <label for="inputEmail1" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="inputEmail1" placeholder="Example@gmail.com">
+                          </div>
+                          <!-- PASSWORD -->
+                          <div class="col-md-6 w-100 mb-5">
+                            <label for="inputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control form__input" id="inputPassword1" placeholder="**********">
+                          </div>
+                          <!-- BUTTON SUBMIT -->
+                          <div class="col-12 d-flex justify-content-center">
+                            <button type="submit" class="btn w-60 border-0 w-50">Sign in</button>
+                          </div>
+                    </fieldset>
+                  </form>
+                  <div class="col-lg-2"></div>
+                  <!-- SIGN UP FORM -->
+                  <form class="row g-3 col-lg-6">
+                    <h2 class="form__title w-100 text-center p-3 rounded">Sign Up</h2>
+                    <div class="col-md-6">
+                      <label for="inputEmail2" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="inputEmail2" placeholder="Example@gmail.com">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="inputPassword2" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="inputPassword2" placeholder="**********">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="inputState" class="form-label">Proposito</label>
+                      <select id="inputState" class="form-select">
+                        <option selected>Choose...</option>
+                        <option>Trabajar con nosotros</option>
+                        <option>Contratacion para evento</option>
+                        <option>Recomendacion</option>
+                      </select>
+                    </div>
+                    <div class="col-6">
+                      <label for="inputRepPassword" class="form-label">Repeat password</label>
+                      <input type="text" class="form-control" id="inputRepPassword" placeholder="**********">
+                    </div>
+                    <div class="form-floating">
+                        <textarea class="form-control" rows="10" placeholder="Leave a comment here" id="floatingTextarea">
+                        </textarea>
+                      </div>
+                    <div class="col-12 d-flex justify-content-center">
+                      <button type="submit" class="btn border-0 w-50">Sign in</button>
+                    </div>
+                  </form>
+            </section>
+        </main>
+        <footer class="footer row w-100 row align-items-center m-0 mt-5">
+          <!-- MADE BY -->
+          <p class="fs-5 col-md-6 ">Pagina creada por <a class="footer__name" href="#">Javier Rocha Gómez</a></p>
+          <!-- SOCIAL MEDIA -->
+          <ul class="nav justify-content-end col-md-6 ">
+            <li class="nav-item">
+              <a class="nav-link" href="https://es.linkedin.com/" target="_blank">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.instagram.com/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.facebook.com/" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mailto:dae_javierrocha@tiberadeltajo.es" target="_blank">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </li>
+          </ul>
+        </footer>
+    </div>
+    <!-- BOOTSTRAP JS FILE -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <!-- OTHER JS FILES -->
+    <script src="../js/script.js"></script>
+</body>
+</html>
